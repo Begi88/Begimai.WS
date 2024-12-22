@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Static Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 0.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Adaptive Website</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the content for section 1. Resize the browser window to see the adaptive design in action.</p>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the content for section 2. The layout adjusts based on screen size.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the content for section 3. Navigation links will stack on smaller screens.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Adaptive Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
